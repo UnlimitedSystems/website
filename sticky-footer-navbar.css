@@ -69,3 +69,42 @@ h1.display-3 {
 
 .unlimited-text-logo-sep {
 }
+
+.product-img {
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 144px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-position: 50% 43px;
+  background-size: auto 60px;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .16);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.product-eth-wallet {
+  background-image: url(img/wallet.svg);
+  background-color: #007bff;
+}
+
+.product-lightning {
+  background-color: #091440;
+  background-image: url(img/lightning.svg);
+}
+
+.product-exchange {
+  background-color: #ffc84d;
+  background-image: url(img/exchange.svg);
+}
+
+.card {
+}
