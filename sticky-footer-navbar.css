@@ -42,6 +42,10 @@ body > .container {
   
 }
 
+.subtitle-small {
+  color: gray;
+}
+
 code {
   font-size: 80%;
 }
@@ -53,4 +57,8 @@ h1.jumbotron-subtitle {
 
 h1.display-3 {
   padding-top: 20px;
+}
+
+.unlimited-moto {
+  margin-bottom: 1em;
 }
