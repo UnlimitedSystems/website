@@ -128,3 +128,26 @@ h1.display-3 {
 .jumbotron {
   padding-bottom: 0px;
 }
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
