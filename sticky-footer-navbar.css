@@ -45,3 +45,12 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+h1.jumbotron-subtitle {
+  margin-top: .5em !important;
+  margin-bottom: .5em;
+}
+
+h1.display-3 {
+  padding-top: 20px;
+}
