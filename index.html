@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon.ico" />
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="sticky-footer-navbar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/Footer-with-logo.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                         <a class="nav-link" href="#">UXWallet <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">UXMarketplace</a>
+                        <a class="nav-link" href="#">UXThunder</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">UXExchange</a>
@@ -47,12 +48,33 @@
                     Unlimited researches, designs and builds 
                     fast, scalable and novel payment systems for the modern economy.
                 </h1>
-                <p><a class="btn btn-primary btn-lg" href="index.html#" role="button">Learn more</a></p>
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <script type="text/javascript">
+                            baseUrl = "https://widgets.cryptocompare.com/";
+                            var scripts = document.getElementsByTagName("script");
+                            var embedder = scripts[ scripts.length - 1 ];
+                            var cccTheme = {"General":{"background":"#253137","priceText":"#ebeef0"},"Menu":{"triggerBackground":"#465a65"}};
+                            (function (){
+                            var appName = encodeURIComponent(window.location.hostname);
+                            if(appName==""){appName="local";}
+                            var s = document.createElement("script");
+                            s.type = "text/javascript";
+                            s.async = true;
+                            var theUrl = baseUrl+'serve/v2/coin/header?fsyms=BTC,ETH,XMR,LTC&tsyms=USD,EUR,CNY,GBP';
+                            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                            embedder.parentNode.appendChild(s);
+                            })();
+                        </script>  
+                    </div>
+                </div>
+                <!-- <p><a class="btn btn-primary btn-lg" href="index.html#" role="button">Learn more</a></p> -->
             </div>
         </div>
 
         <!-- content -->
-        <div class="container" style="margin-bottom: 1em;">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <!-- first version of motto -->
@@ -102,24 +124,95 @@
                 </div>
             </div>
 
+            <!--
             <h1 class="mt-5">Sticky footer with fixed navbar</h1>
             <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
             <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+            -->
         </div>
     </main>
-
+<!--
     <footer class="footer">
         <div class="container">
-            <div class="pull-right">
-                <span class="text-muted">&copy; 2018 Unlimited Systems Lda.</span>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Our products</h5>
+                    <ul class="list-unstyled">
+                        <li>UXWallet</li>
+                        <li>UXThunder</li>
+                        <li>UXExchange</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>About Us</h5>             
+                </div>
+                <div class="col-md-3">
+                    <h5>Get Social</h5>
+                </div>
+                <div class="col-md-3">                
+                    <h5>Contacts</h5>
+                </div>
+                <div class="col-md-12">
+                    <span class="text-muted">&copy; 2018 Unlimited Systems Lda.</span>
+                </div>
             </div>
         </div>
     </footer>
+-->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#">UXWallet</a></li>
+                        <li><a href="#">UXThunder</a></li>
+                        <li><a href="#">UXExchange</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Advisors</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home mr-3"></i> Praia, Cape Verde, Africa</a></li>
+                        <li><a href="#"><i class="fa fa-envelope mr-3"></i> support@unlimited.systems</a></li>
+                        <li><a href="#"><i class="fa fa-phone mr-3"></i> +(238)585 06 06</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5></h5>
+                    <p> Quality matters, thats why you're here. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-bar">
+            <div class="container">
+                <h2 class="logo"><a href="#"> <span class="text-muted">&copy; 2018 Unlimited Systems Lda.</span> </a></h2>
+                <div class="social-icons">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="jquery-3.3.1.slim.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-  </body>
+    <script src="dist/js/bootstrap.min.js"></script>      
+</body>
 </html>
+
+
+                              
