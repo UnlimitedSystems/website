@@ -4,3 +4,17 @@
     padding-left: 20px;
     color: #fff !important;
 }
+
+header nav #navbarCollapse ul li a{
+    color: white !important
+}
+
+header nav #navbarCollapse ul li a:hover,
+header nav #navbarCollapse ul li a:active{
+    border-style: solid !important;
+    border-bottom-color: rgb(250, 191, 44) !important;
+    border-bottom-width: 2px !important;
+    border-top-width: 0px !important;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+}
