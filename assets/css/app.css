@@ -18,3 +18,11 @@ header nav #navbarCollapse ul li a:active{
     border-left-width: 0px !important;
     border-right-width: 0px !important;
 }
+
+.btn-primary {
+
+    color: #111;
+    background-color: rgb(250, 191, 44);
+    border-color: rgb(250, 191, 44);
+
+}
